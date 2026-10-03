@@ -1,0 +1,17 @@
+{
+  "name": "1code",
+  "version": "1.0.0",
+  "description": "a basic app",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js"
+  },
+  "keywords":[
+    "node",
+    "chai"
+  ],
+  "author": "anuj",
+  "license": "ISC"
+}
+ 
