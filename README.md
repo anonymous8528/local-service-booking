@@ -2,8 +2,7 @@
 
 A full-stack web app where customers book local service providers (electricians, plumbers, tutors, carpenters, cleaners) by time slot. Providers manage their own availability, and admins get an overview of the platform.
 
-**Live demo:** `https://YOUR-APP.vercel.app` (add after deployment)
-**API:** `https://YOUR-API.onrender.com` (add after deployment)
+**Live demo:** `https://local-service-booking-anonymous8528s-projects.vercel.app`
 
 <img width="1905" height="951" alt="image" src="https://github.com/user-attachments/assets/105e07fe-757d-4600-b3d0-ab25fe4ce03c" />
 <img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/eb3f491a-b5e2-4815-bcb3-8d18e8c36373" />
