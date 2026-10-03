@@ -131,13 +131,13 @@ Free plans and limits change, so check each service's current free tier before y
 - Set `app.seed-demo=false` (or remove that line) so demo accounts with a known password are not created online.
 - Push the project to GitHub (repo root contains `backend/` and `frontend/`).
 
-### Step 1: Create a PostgreSQL database
-Use a hosted PostgreSQL service (for example Neon, or a Render PostgreSQL database).
+### Step 1: Create a MySQL database
+Use a hosted PostgreSQL service (for example Neon, or a Render mysql database).
 1. Create a database and copy the connection details.
 2. Convert them to JDBC format. If the provider shows:
-   `postgresql://USER:PASSWORD@HOST/DBNAME?sslmode=require`
+   `mysql://USER:PASSWORD@HOST/DBNAME?sslmode=require`
    then your values are:
-   - `DATABASE_URL` = `jdbc:postgresql://HOST/DBNAME?sslmode=require`
+   - `DATABASE_URL` = `jdbc:mysql://HOST/DBNAME?sslmode=require`
    - `DB_USER` = `USER`
    - `DB_PASSWORD` = `PASSWORD`
 
