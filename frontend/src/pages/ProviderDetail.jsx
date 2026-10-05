@@ -69,7 +69,7 @@ export default function ProviderDetail() {
 
   return (
     <>
-      <Link to="/" className="back">Back to all providers</Link>
+      <Link to="/providers" className="back">Back to all providers</Link>
       <h1>{provider.name}</h1>
       <p className="muted">
         {provider.category.charAt(0) + provider.category.slice(1).toLowerCase()}
