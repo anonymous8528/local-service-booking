@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import api, { errorMessage } from "../api.js";
 import { useAuth } from "../AuthContext.jsx";
+import { CATEGORIES } from "../categories.js";
 
-const CATEGORIES = ["ELECTRICIAN", "PLUMBER", "TUTOR", "CARPENTER", "CLEANER"];
 
 export default function Register() {
   const { login } = useAuth();
@@ -59,7 +59,7 @@ export default function Register() {
         <>
           <label htmlFor="category">Your trade</label>
           <select id="category" value={form.category} onChange={set("category")}>
-            {CATEGORIES.map((c) => <option key={c} value={c}>{c.charAt(0) + c.slice(1).toLowerCase()}</option>)}
+            {CATEGORIES.map((c) => <option key={c.key} value={c.key}>{c.label}</option>)}
           </select>
           <label htmlFor="city">City</label>
           <input id="city" value={form.city} onChange={set("city")} />

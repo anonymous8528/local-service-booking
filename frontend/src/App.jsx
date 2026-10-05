@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
+import Home from "./pages/Home.jsx";
 import Providers from "./pages/Providers.jsx";
 import ProviderDetail from "./pages/ProviderDetail.jsx";
 import Login from "./pages/Login.jsx";
@@ -15,7 +16,8 @@ export default function App() {
       <Navbar />
       <main className="page">
         <Routes>
-          <Route path="/" element={<Providers />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/providers" element={<Providers />} />
           <Route path="/providers/:id" element={<ProviderDetail />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

@@ -1,6 +1,8 @@
 package com.localserve.booking.model;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 @Entity
 @Table(name = "users")
@@ -23,7 +25,10 @@ public class User {
     private Role role;
 
     // The fields below are only filled for providers
+    // Stored as plain text (VARCHAR), so adding a new Category later never needs a database change.
     @Enumerated(EnumType.STRING)
+    @JdbcTypeCode(SqlTypes.VARCHAR)
+    @Column(length = 30)
     private Category category;
     private String city;
     private Double hourlyRate;
